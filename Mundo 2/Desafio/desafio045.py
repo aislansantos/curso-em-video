@@ -26,6 +26,9 @@ elif opcao_jogador == 1:
     opcao_jogador = 'PAPEL'
 elif opcao_jogador == 2:
     opcao_jogador = 'TESOURA'
+else:
+    print('Opção Inválida')
+    exit()
 
 if opcao_computador == 0:
         opcao_computador = 'PEDRA'
@@ -33,14 +36,24 @@ elif opcao_computador == 1:
     opcao_computador = 'PAPEL'
 elif opcao_computador == 2:
     opcao_computador = 'TESOURA'
-    
-print('o computador escolheu {}'.format(opcao_computador))
+
+sleep(1)
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)    
+print('PO!!!')
+sleep(2)
+print('')
+print('Seu adversário escolheu {}'.format(opcao_computador))
 print('Você escolheu {}'.format(opcao_jogador))
+print('')
+sleep(2)
 
 if opcao_computador == 'PEDRA' and opcao_jogador == 'PEDRA' or opcao_computador == 'PAPEL' and opcao_jogador =='PAPEL'  or opcao_computador == 'TESOURA' and opcao_jogador == 'TESOURA':
     print('Jogo emptatado !')
 elif opcao_computador == 'PEDRA' and opcao_jogador == 'TESOURA' or opcao_computador == 'PAPEL' and opcao_jogador == 'PEDRA' or opcao_computador == 'TESOURA' and opcao_jogador == 'PAPEL':
-    print('Seu adversario ganhou!')
+    print('Seu adversário ganhou!')
 else:
     print('Você ganhou !')
 
