@@ -10,7 +10,7 @@ nascimento de um atleta e mostre sua categoria, de acordo com a idade:
 '''
 import os #Importa biblioteca do sistema
 os.system('cls' if os.name == 'nt' else 'clear') # limpa a tela na inicialização do programa
-from datetime import date
+from datetime import date #Impota o modulo de 
 
 print()
 print('-='*25 + ' Classificação de Atletas' + '=-'*25)
