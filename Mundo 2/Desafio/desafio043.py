@@ -17,8 +17,8 @@ print('-='*25 + ' IMC ' + '=-'*25)
 print()
 
 peso = float(input('Digite seu peso: '))
-altura = float(input('Digite sua Altura: '))
-imc = peso / (altura * altura)
+altura = float(input('Digite sua altura: '))
+imc = peso / (altura ** 2)
 
 
 if imc < 18.5:
