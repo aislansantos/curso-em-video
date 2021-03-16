@@ -7,11 +7,18 @@ import os #Importa biblioteca do sistema
 os.system('cls' if os.name == 'nt' else 'clear') # limpa a tela na inicialização do programa
 
 print()
-print('-='*25 + ' Titulo do Exercicio' + '=-'*25)
+print('{:-^150}'.format(' SOMA '))
 print()
 
+soma = 0
+contador = 0
+for c in range(1, 501, 2):
+    if c % 3 == 0:
+        soma += c
+        contador += 1
+            
 
-
+print('A somatória de todos os numeros impares multiplos de 3 de 1 a 500 é {} no total de {} numeros que atende ao que foi pedido!'.format(soma, contador))
 print()
-print('-='*25 + ' FIM' + '=-'*25)
+print('{:-^150}'.format(' FIM '))
 print()

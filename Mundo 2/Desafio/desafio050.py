@@ -8,11 +8,12 @@ import os #Importa biblioteca do sistema
 os.system('cls' if os.name == 'nt' else 'clear') # limpa a tela na inicialização do programa
 
 print()
-print('-='*25 + ' Titulo do Exercicio' + '=-'*25)
+print('{:-^150}'.format(' SOMA NUMEROS PARES '))
 print()
 
-
+for c in range(0, 7 ):
+    n = 
 
 print()
-print('-='*25 + ' FIM' + '=-'*25)
+print('{:-^150}'.format(' FIM '))
 print()
