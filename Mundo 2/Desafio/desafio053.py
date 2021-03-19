@@ -12,13 +12,21 @@ print()
 frase = str(input('Digite uma frase: ')).strip().upper()
 #tratamento de strings
 palavras = frase.split()
-frase_join = ''.join(palavras)
-tamanho  = len
+junto = ''.join(palavras)
+inverso = ''
 
-#mostrar 
-print(frase_join)
-print(palavras)
-print(tamanho)
+#exercicio feito inverso por fatiamento sem for
+inverso = junto[::-1]
+
+#exercicio feito inverso por for
+'''for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]
+'''
+print('o inverso de {} é {}'.format(junto, inverso))
+if junto == inverso:
+    print('palindrono')
+else:
+    print('não é palindrono')
 
 print()
 print('{:=^150}'.format(' FIM '))
