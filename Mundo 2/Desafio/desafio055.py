@@ -10,12 +10,17 @@ print()
 print('{:-^150}'.format(' Exercicio '))
 print()
 
-menor = 100000000000000000000000
+menor = 0
 maior = 0
 erro = 0
 
 for pessoa in range(1, 6):
     peso = float(input('Digite o peso de {}ª pessoa: '.format(pessoa)))
+    print(pessoa)
+    if pessoa == 1:
+        maior = peso       
+        menor = peso
+ 
     if peso < 332:
         if peso < menor:
             menor = peso
