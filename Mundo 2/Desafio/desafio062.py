@@ -23,6 +23,7 @@ while contador != 0:
         print('{} -> '.format(pa),end='')
         pa += razão
     print('ACABOU')
+    
         
 
 
