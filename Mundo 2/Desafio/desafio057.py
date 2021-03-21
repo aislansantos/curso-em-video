@@ -10,13 +10,11 @@ os.system('cls' if os.name == 'nt' else 'clear') # limpa a tela na inicializaç�
 print()
 print('{:-^150}'.format(' Exercicio '))
 print()
+sexo = str(input('Digite seu sexo[M/F]: ')).strip().upper()[0] # o [0] é fatiamento pegando só a primeira letra da  palavra
 
-c = 0
-while c == 0:
-    sexo = str(input('Digite seu sexo[M/F]: ')).strip()
-    if sexo in 'Mm' or sexo in'Ff':
-        c = 1
-        
+while sexo not in 'MF':
+    sexo = str(input('Dados invalidos, informe seu sexo[M/F]: ')).strip().upper()[0] # o [0] é fatiamento pegando só a primeira letra da  palavra
+print('Sexo {} digitado com sucesso'.format(sexo))
 
 print()
 print('{:-^150}'.format(' FIM '))

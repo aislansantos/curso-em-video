@@ -13,11 +13,21 @@ print('{:-^150}'.format(' Exercicio '))
 print()
 
 computador = randint(0, 10)
-jogador = 11
-print(computador)
+print('Sou seu computador ... acabei de pensar em um numero entre 0 e 10.')
+print('Será que você consegue adivinhar qual foi ?')
+acertou = False
+palpite = 0
+while not acertou:
+    jogador = int(input('Qual é o seu palpite ?'))
+    palpite += 1
+    if jogador == computador:
+        acertou = True
+    if jogador < computador:
+        print('mais ... Tente mais uma  vez.')
+    else:
+        print('menos ... Tente mais uma  vez.')
 
-while jogador != computador:
-    jogador = int(input('Digite um numero de 0 a 10: '))
+print('Acertou, com {} palpites'.format(palpite))
 
 print()
 print('{:-^150}'.format(' FIM '))
