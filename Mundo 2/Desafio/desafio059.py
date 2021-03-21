@@ -22,7 +22,7 @@ print('{:-^150}'.format(' Opções '))
 
 status = 0
 
-while status < 5:
+while status != 5:
     print('[ 1 ] Somar')
     print('[ 2 ] Multiplicar')
     print('[ 3 ] Maior')
@@ -56,12 +56,11 @@ while status < 5:
         n1 = float(input('Digite um número: '))
         n2 = float(input('Digite outro numero: '))
         print('{:-^150}'.format(' Opções '))
-    
-    
-    
-        
-            
-        
+    if status == 5:
+        print('Obrigado, volte sempre')
+    else:
+        print('Opção invalida tente novamente !')
+        print('{:-^150}'.format(' Opções '))
 
 print()
 print('{:-^150}'.format(' FIM '))
