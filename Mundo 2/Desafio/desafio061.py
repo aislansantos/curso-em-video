@@ -17,7 +17,7 @@ contador = 1
 pa = termo
 
 while contador <= 10:
-    print('{} ->'.format(pa), end='' )
+    print('{} -> '.format(pa), end='' )
     pa += razao
     contador += 1
 print('ACABOU !')

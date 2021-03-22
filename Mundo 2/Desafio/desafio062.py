@@ -12,17 +12,22 @@ print('{:-^150}'.format(' Exercicio '))
 print()
 
 termo = int(input('Digite o primeiro termo: '))
-razão = int(input('Digite a razão: '))
+razao = int(input('Digite a razão: '))
 
-contador = 1
+controle = 0
 pa = termo
+mais = 10
+total = 0
 
-while contador != 0:
-    contador = int(input('Dejesa mostrar mais quantos termos: '))
-    for contagem in range(termo, contador + 1):
-        print('{} -> '.format(pa),end='')
-        pa += razão
-    print('ACABOU')
+while mais != 0:
+    total += mais
+    while controle < total:
+        print('{} -> '.format(pa), end='' )
+        pa += razao
+        controle += 1
+    print('Pausa')
+    mais = int(input('Quantos termos mostrar: '))
+print('ACABOU com {} termos mostrados!'.format(controle))
     
         
 

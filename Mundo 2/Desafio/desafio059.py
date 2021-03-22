@@ -9,6 +9,7 @@ Crie um programa que leia dois valores e mostre um menu na tela:
 Seu programa deverá realizar a operação solicitada em cada caso.
 '''
 import os #Importa biblioteca do sistema
+from time import sleep
 os.system('cls' if os.name == 'nt' else 'clear') # limpa a tela na inicialização do programa
 
 print()
@@ -35,12 +36,12 @@ while status != 5:
         print('A soma de {} e {} = {}'.format(n1, n2, n1 + n2))
         print()
         print('{:-^150}'.format(' Opções '))
-    if status == 2:
+    elif status == 2:
         print()
         print('A multiplicação de {} * {} = {}'.format(n1, n2, n1 * n2))
         print()
         print('{:-^150}'.format(' Opções '))
-    if status == 3:
+    elif status == 3:
         if n1 > n2:
             print()
             print('Entre {} e {} o maior numero é {}'.format(n1, n2, n1))
@@ -51,16 +52,17 @@ while status != 5:
             print('Entre {} e {} o maior numero é {}'.format(n1, n2, n2))
             print()
             print('{:-^150}'.format(' Opções '))
-    if status == 4:
+    elif status == 4:
         print('{:-^150}'.format(' Nova Entrada de Valores '))
         n1 = float(input('Digite um número: '))
         n2 = float(input('Digite outro numero: '))
         print('{:-^150}'.format(' Opções '))
-    if status == 5:
+    elif status == 5:
         print('Obrigado, volte sempre')
     else:
         print('Opção invalida tente novamente !')
         print('{:-^150}'.format(' Opções '))
+    sleep(2)
 
 print()
 print('{:-^150}'.format(' FIM '))
