@@ -1,4 +1,4 @@
-'''
+
 # Comando break en while infinito
 
 n = s = 0
@@ -14,8 +14,9 @@ while True:
 
 # FORMA NOVA FSTRINGS
 print(f'a soma vale {s}')
-'''
+
 
 nome = 'José'
 idade = 33
-print(f'O {nome} tem {idade} anos.')
+salario = 987
+print(f'O {nome:-^20} tem {idade} anos e ganha R$ {salario:.2f}')
