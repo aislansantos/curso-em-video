@@ -38,7 +38,7 @@ while True:
 
     opcao = str(input('Deseja continuar ?')).strip().upper()
 
-    if opcao == 'N' or opcao == 'NÃO' or opcao == 'NAO' or opcao == '':
+    if opcao != 'S' or opcao != 'SIM':
         break
 
 print(f'''Foram cadastradas {pessoas_acima_18} pessoas com mais de 18 anos.
