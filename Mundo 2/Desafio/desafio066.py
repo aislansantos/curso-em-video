@@ -12,10 +12,10 @@ print()
 print('{:-^150}'.format(' Exercicio '))
 print()
 
-n = s = c  = 0
+s = c  = 0
 
 while True:
-    n = int(input('Digie um número: '))
+    n = int(input('Digie um número[999 para parar]: '))
     if n == 999:
         break
     s += n

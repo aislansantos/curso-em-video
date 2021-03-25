@@ -19,26 +19,20 @@ pessoas_acima_18 = homens = mulheres = 0
 
 
 while True:
-    nome = str(input('Nome: ')).strip()
-    if nome == '':
-            print('Informação inválida!')
-            break
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo[M/F]: ')).strip().upper()
-    if sexo == '':
-            print('Informação inválida!')
-            break
-
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo[M/F]: ')).strip().upper()[0]
     if idade > 18:
         pessoas_acima_18 += 1
     if sexo == 'M':
         homens += 1
     if sexo == 'F' and idade < 20:
         mulheres += 1
-
-    opcao = str(input('Deseja continuar ?')).strip().upper()
-
-    if opcao != 'S' or opcao != 'SIM':
+    opcao = ' '
+    while opcao not in 'SN':
+        opcao = str(input('Deseja continuar ?')).strip().upper()[0]
+    if opcao == 'N':
         break
 
 print(f'''Foram cadastradas {pessoas_acima_18} pessoas com mais de 18 anos.

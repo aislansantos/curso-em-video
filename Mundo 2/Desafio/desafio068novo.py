@@ -13,7 +13,7 @@ print('{:-^150}'.format(' Exercicio '))
 print()
 jogada = ''
 while True:
-    computador = randint(0, 1)
+    computador = randint(0, 10)
     numero_jogador = int(input('Qual o numero você escolhe ?'))
     total = (computador + numero_jogador) % 2
     print(total)    
@@ -21,7 +21,9 @@ while True:
         jogada = 'P'
     elif total == 1:
         jogada = 'I'
-    jogador = str(input('Par ou Impar[P/I]: ')).strip().upper()
+    jogador = ' '
+    while jogador not in 'PI':
+        jogador = str(input('Par ou Impar[P/I]: ')).strip().upper()[0]
     if jogador == jogada:
         print('você Venceu !')
     elif jogador != jogada:

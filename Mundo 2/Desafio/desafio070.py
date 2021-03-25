@@ -36,8 +36,9 @@ while True:
         preco_barato = preco
         barato = produto
 
-
-    opcao = str(input('Deseja continuar[s/n]: ')).strip().lower()
+    opcao = ' '
+    while opcao not in 'sn':
+        opcao = str(input('Deseja continuar[s/n]: ')).strip().lower()[0]
         
     if opcao == 'n' or opcao == 'nao' or opcao == 'não':
         break
