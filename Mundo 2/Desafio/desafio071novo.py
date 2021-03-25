@@ -13,12 +13,12 @@ print('{:-^150}'.format(' Exercicio '))
 print()
 
 valor = int(input('Qual valor você quer sacar? R$ '))
-total = valor
+
 ced = 50
 totalced = 0
 while True:
-    if total >= ced:
-        total -= ced
+    if valor >= ced:
+        valor -= ced
         totalced += 1
     else:
         print(f'Total de {totalced} cedulas de R$ {ced:.2f}')
@@ -29,7 +29,7 @@ while True:
         elif ced == 10:
             ced = 1
         totalced = 0
-        if total == 0:
+        if valor == 0:
             break
 
 
