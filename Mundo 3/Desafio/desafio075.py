@@ -31,8 +31,15 @@ if nove > 0:
 else:
     print(f'O numero 9 não foi Digitado !')
 
-for cont in n:
+for cont in n:        
     if cont == 3:
+        print(f'O numero 3 apareceu a primeira vez na posição {n.index(3)}')
+        tres += 1
+        break
+if tres == 0:
+    print('O numero 3 não foi digitado !')
+    
+    
 
 print()
 print('{:-^150}'.format(' FIM '))
