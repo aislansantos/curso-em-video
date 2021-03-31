@@ -55,14 +55,14 @@ if par == 1:
     for x in range(0, len(n)):
         if n[x] % 2 == 0:
             print(f'{n[x]}', end='')
-            print('.')
+    print('.')
 #Mostra os números pares que foram digitados se foi mais que 1
 elif par > 1:
     print('os numero pares digitados foram: ', end='')
     for x in range(0, len(n)):
         if n[x] % 2 == 0:
-            print(f'{n[x]}', end='')
-            print('.')
+            print(f'{n[x]} ', end='')
+    print('.')
     
     
     
