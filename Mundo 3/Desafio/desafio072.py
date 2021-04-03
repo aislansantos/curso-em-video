@@ -4,8 +4,9 @@ Crie um programa que tenha uma dupla totalmente preenchida com uma contagem por 
 de zero até vinte.
 Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostrá-lo por extenso.
 '''
-import os #Importa biblioteca do sistema
-os.system('cls' if os.name == 'nt' else 'clear') # limpa a tela na inicialização do programa
+import os  # Importa biblioteca do sistema
+# limpa a tela na inicialização do programa
+os.system('cls' if os.name == 'nt' else 'clear')
 
 print()
 print('{:-^150}'.format(' Exercicio '))
@@ -26,7 +27,7 @@ while True:
     opcao = str(input('Desesa continuar[S/N] ?')).strip().upper()
     if opcao == 'N':
         break
-        
+
 print()
 print('{:-^150}'.format(' FIM '))
 print()

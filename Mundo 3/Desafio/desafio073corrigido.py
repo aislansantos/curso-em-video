@@ -16,10 +16,11 @@ print()
 print('{:-^150}'.format(' Exercicio '))
 print()
 
-times = ('Corithians', 'Palmeiras', 'Santos', 'Gremio', 'Cruzeiro', 'Flamengo',
-         'Atlético-MG', 'Botafogo', 'Athletico-PR', 'Bahia', 'São Paulo', 'Fluminense',
-         'Sport Recife', 'EC Vitória', 'Coritiba', 'Avaí', 'Ponte Preta',
-         'Atlético-GO')
+times = ('Corithians', 'Palmeiras', 'Santos', 'Gremio', 'Cruzeiro',
+         'Flamengo', 'Vasco da Gama', 'Chapecoense',
+         'Atlético-MG', 'Botafogo', 'Athletico-PR', 'Bahia',
+         'São Paulo', 'Fluminense', 'Sport Recife', 'EC Vitória',
+         'Coritiba', 'Avaí', 'Ponte Preta', 'Atlético-GO')
 print(times)
 print('{:-^150}'.format('TABELA BRASILEIRÃO 2017'))
 for time in range(0, len(times)):
@@ -35,8 +36,10 @@ for primeiros in range(0, 5):
 print()
 
 print('B - Os últimos 4 colocados.')
+# correção da forma de mostrar os 4 ultimos times forma menos interessante
 print('Os últimos 4 colocados são {}'.format(times[:-5:-1]))
-print('{}'.format(times[16::]))
+# correção da forma de mostrar os 4 ultimos times
+print('{}'.format(times[-4:]))
 print()
 print('Os últimos 4 colocados são:')
 for ultimos in range(len(times)-1, 15, -1):
