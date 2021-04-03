@@ -20,6 +20,7 @@ while True:
     selecionado = int(input('Digite um valor de 0 a 20: '))
     if selecionado >= 0 and selecionado <= 20:
         break
+    print('tente novemente.', end=' ')
 print(f'Você digitou o número {numero[selecionado]}')
 
 print()
