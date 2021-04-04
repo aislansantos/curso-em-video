@@ -10,7 +10,7 @@ print()
 print('{:-^150}'.format(' Exercicio '))
 print()
 
-palavras = ('casa', 'terreno', 'contrução', 'projeto', 'pedreiro', 'cimento', 'loja', 'tempo', 'programação')
+palavras = ('casa', 'terreno', 'contrução', 'projeto', 'pedreiro', 'cimento', 'loja', 'tempo', 'programação', 'mercado')
 
 print(palavras)
 
