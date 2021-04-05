@@ -12,14 +12,21 @@ os.system('cls' if os.name == 'nt' else 'clear')
 print()
 print('{:-^150}'.format(' Exercicio '))
 print()
-expressao = []
-e = str(input('Digite uma expressão: ')).strip()
-for item in range(0, len(e)):
-    expressao.append(e[item])
-if expressao.count('(') == expressao.count(')'):
-    print('Expressão está valida!')
+expr = str(input('Digite uma expressão: ')).strip()
+pilha = []
+for simb in expr:
+    if simb == '(':
+        pilha.append('(')
+    elif simb == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+if len(pilha) == 0:
+    print('Sua expressão está válida!')
 else:
-    print('Expressão está errada!')
+    print('Sua expressão está errada!')
 print()
 print('{:-^150}'.format(' FIM '))
 print()

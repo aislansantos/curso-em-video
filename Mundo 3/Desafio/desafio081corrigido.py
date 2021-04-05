@@ -16,15 +16,14 @@ print()
 print('{:-^150}'.format(' Exercicio '))
 print()
 numeros = list()
-cont = 0
 while True:
-    n = int(input('Digite um valor:'))
-    numeros.append(n)
-    cont += 1
-    opcao = str(input('Desaja continuar[S/N] ?').strip().upper()[0:])
-    if opcao == 'N':
+    numeros.append(int(input('Digite um valor:')))
+    opcao = str(input('Desaja continuar[S/N] ?').strip().upper())[0]
+    # Usando o im na leitura para parar o programa
+    if opcao in 'N':
         break
-print(f'Você digitou {cont} elementos')
+# Usando o len para mostrar a quantidade de numeros na lista
+print(f'Você digitou {len(numeros)} elementos')
 numeros.sort(reverse=True)
 print(f'Os valores em ordem decrescentes são: {numeros}')
 if 5 in numeros:

@@ -12,7 +12,7 @@ print('{:-^150}'.format(' Exercicio 78 lista '))
 print()
 numeros = list()
 for num in range(0, 5):
-    numeros.append(int(input('Digite um valor: ')))
+    numeros.append(int(input(f'Digite um valor na posição {num}: ')))
 print(f'Você digitou os valores: {numeros}')
 maior = max(numeros)
 menor = min(numeros)

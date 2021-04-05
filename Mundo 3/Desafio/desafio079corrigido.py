@@ -15,17 +15,17 @@ print()
 numeros = list()
 while True:
     n = (int(input('Digite um valor: ')))
-    if n in numeros:
-        print('valor duplicado! Não vou adicionar')
-    else:
+    #na exercicio não usei a clausula NOT
+    if n not in numeros:
         numeros.append(n)
-        print('Valor adicionado com sucesso!')
+        print('Valor adicionado com sucesso...')
+    else:
+        print('valor duplicado! Não vou adicionar...')
     opcao = str(input('Deseja continuar?[S/N]').strip().upper())[0]
     if opcao == 'N':
-        break 
-print('-=-'*30)
-print(f'Você digitou o seguintes números: {sorted(numeros)}')
+        break
+numeros.sort()
+print(f'Você digitou o seguintes números: {numeros}')
 print()
 print('{:-^150}'.format(' FIM '))
 print()
-
