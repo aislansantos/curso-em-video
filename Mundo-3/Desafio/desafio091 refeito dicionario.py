@@ -12,9 +12,27 @@ from operator import itemgetter
 # limpa a tela na inicialização do programa
 os.system('cls' if os.name == 'nt' else 'clear')
 
+jogo = dict()
+ranking = list()
+
 print()
 print('{:-^150}'.format(' Exercicio '))
 print()
+
+#Gera quantidade de jogaodres e atribui a jogada a cada um construindo o dicionario
+for j in range(0,4):
+    jogo['jogador' + str(j+1)] = randint(1, 6)
+
+for k, v in jogo.items():
+    print(f'{k}: valor dado {v}')
+    sleep(1)
+
+print('{:-^150}'.format(' Ranking '))
+
+ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
+for i, v in enumerate(ranking):
+    print(f'{i+1}º lugar {v[0]} com {v[1]} pontos.')
+    sleep(1)
 
 print()
 print('{:-^150}'.format(' FIM '))
